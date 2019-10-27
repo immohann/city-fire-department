@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Report </title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="employee.css">
+    
+</head>
+<body>
+  
+     <h1>Update Report Details</h1>
+ <p>Fill the Report details</p>
+  
+<!--  form starts here-->
+   <div class="container">
+    <form method="post" action="updreport.php">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Branch ID</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">&infin;</span>
+        </div>
+        <input type="number" class="form-control" id="validationDefaultUsername" placeholder="Branch ID" aria-describedby="inputGroupPrepend2" required name="rep_bid">
+      </div>
+    </div>
+  <div class="form-row">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefault03">Date of Incident</label>
+      <input type="date" class="form-control" id="validationDefault03" placeholder="DD/MM/YYYY" required name="rep_date">
+    </div>
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Report ID</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">&infin;</span>
+        </div>
+        <input type="number" class="form-control" id="validationDefaultUsername" placeholder="ID" aria-describedby="inputGroupPrepend2" required name="rep_id">
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">Report Location</label>
+      <input type="text" class="form-control" id="validationDefault03" placeholder="Location" required name="rep_loc">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Report Description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="rep_desc"></textarea>
+  </div>
+  <div class="form-group">
+    <div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Causalities Injured</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">&infin;</span>
+        </div>
+        <input type="number" class="form-control" id="validationDefaultUsername" placeholder="Injured" aria-describedby="inputGroupPrepend2" required name="cas_injured">
+      </div>
+    </div><div class="col-md-4 mb-3">
+      <label for="validationDefaultUsername">Causalities Dead</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">&infin;</span>
+        </div>
+        <input type="number" class="form-control" id="validationDefaultUsername" placeholder="Deaths" aria-describedby="inputGroupPrepend2" required name="cas_dead">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        The above details filled are true 
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary button" type="submit">Update</button>
+</form>
+</div>
+<!--  form ends here-->
+</body>
+</html>

@@ -1,0 +1,54 @@
+body{
+    background: url(images/empbg.jpg);
+	background-attachment:fixed;
+	background-size: cover;
+}
+
+
+h1,p{
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.container{
+    margin-top: 50px;
+    margin-left: 300px;
+    color: white;
+}
+
+/*button effect starts here*/
+.button {
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+
+}
+.button:before,
+.button:after {
+  border: 0 solid transparent;
+  transition: all 0.25s;
+  content: '';
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+.button:before {
+  border-top: 2px solid white;
+  left: 0px;
+  top: -5px;
+}
+.button:after {
+  border-bottom: 2px solid white;
+  bottom: -5px;
+  right: 0px;
+}
+
+.button:hover:before,
+.button:hover:after {
+  height: 100%;
+  width: 100%;
+}
+/*button effect ends here*/
